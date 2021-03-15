@@ -9,7 +9,8 @@ gestOSCSender depends on [openFrameworkd](https://github.com/openframeworks/open
 
 #### Example client implementation in Processing using oscP5 library
 
-```void oscEvent(OscMessage theOscMessage) {
+```processing
+void oscEvent(OscMessage theOscMessage) {
   /* check if theOscMessage has the address pattern we are looking for. */
   if (theOscMessage.checkAddrPattern("/normalized/hand0")==true) {
     /* check if the typetag is the right one. */
@@ -40,3 +41,4 @@ gestOSCSender depends on [openFrameworkd](https://github.com/openframeworks/open
     }
   } 
 }
+```
