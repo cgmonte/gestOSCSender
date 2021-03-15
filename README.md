@@ -1,7 +1,11 @@
+*This repository is for archive purpose only.*
+
 # gestOSCSender
 An Open Sound Control (OSC) server written in C++ to connect GestureTek's GestTrack3D SDK to OSC-enabled applications.
 
 As a proof of concept, I have developed [Gestdrums](https://github.com/cgmonte/gestDrums), an experiment in gesture-controlled drums made with Processing that uses GestTrack3D through gestOSCSender. Watch a video about Gestdrums [here](https://youtu.be/qLQKYlK8aWg).
+
+gestOSCSender depends on [openFrameworkd](https://github.com/openframeworks/openFrameworks) for interface and OSC, [POCO C++ LIbrary](https://github.com/pocoproject/poco) for address validation and [GestTrack3DHand](http://gesturetek.com/oldhome/gestpoint/introduction.php) for MS Kinekt tracking. Many thanks to all the developers of these libraries and frameworks, which by the way are not distributed in this repository.
 
 #### Example client implementation in Processing using oscP5 library
 
@@ -12,7 +16,7 @@ As a proof of concept, I have developed [Gestdrums](https://github.com/cgmonte/g
     if (theOscMessage.checkTypetag("fff")) {
       /* parse theOscMessage and extract the values from the osc message arguments. */
       float firstValueX = theOscMessage.get(0).floatValue();  
-          float secondValueY = theOscMessage.get(1).floatValue();
+      float secondValueY = theOscMessage.get(1).floatValue();
       float thirdValueZ = theOscMessage.get(2).floatValue();
       hand0x = firstValueX;
       hand0y = secondValueY;
