@@ -1,7 +1,7 @@
 *This repository is for archive purpose only.*
 
 # gestOSCSender
-An Open Sound Control (OSC) server written in C++ to connect GestureTek's GestTrack3D SDK to OSC-enabled applications.
+An Open Sound Control (OSC) server written in C++ to connect GestureTek's GestTrack3D SDK to OSC-enabled applications. Developed as part of a 4 month internship at [GestureTek](http://gesturetek.com/). Toronto, Canada, from June to September 2013.
 
 As a proof of concept, I have developed [Gestdrums](https://github.com/cgmonte/gestDrums), an experiment in gesture-controlled drums made with Processing that uses GestTrack3D through gestOSCSender. Watch a video about Gestdrums [here](https://youtu.be/qLQKYlK8aWg).
 
